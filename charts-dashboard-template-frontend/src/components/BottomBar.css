@@ -1,0 +1,24 @@
+.bottom-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  padding: 10px 200px;
+  color: rgb(184, 184, 184);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  z-index: 1000;
+  font-size: 0.9em;
+}
+
+.left-text,
+.right-text {
+  flex: 1;
+}
+
+.right-text {
+  text-align: right;
+}

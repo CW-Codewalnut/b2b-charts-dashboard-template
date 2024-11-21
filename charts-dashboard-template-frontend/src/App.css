@@ -1,0 +1,13 @@
+.content {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.center {
+  color: black;
+  padding-top: 20px;
+  font-size: 40px;
+  font-weight: bold;
+}

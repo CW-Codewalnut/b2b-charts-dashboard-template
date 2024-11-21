@@ -1,0 +1,9 @@
+.bar-chart-container {
+  width: 45vw;
+  height: 460px;
+  margin: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
