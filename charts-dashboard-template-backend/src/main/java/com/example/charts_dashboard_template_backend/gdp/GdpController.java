@@ -24,4 +24,10 @@ public class GdpController {
     public List<GdpData> addGdpData(@RequestBody List<GdpData> gdpData) {
         return gdpService.saveCountryGdpData(gdpData);
     }
+
+    @DeleteMapping
+    @CrossOrigin(origins = "*")
+    public void deleteGdpData() {
+        gdpService.deleteAllCountryGdpData();
+    }
 }

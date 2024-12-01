@@ -15,8 +15,12 @@ public class SaleService {
         return saleRepository.findAll();
     }
 
-    public List<Sale> saveSale(List<Sale> sales) {
+    public List<Sale> saveSales(List<Sale> sales) {
         return saleRepository.saveAll(sales);
+    }
+
+    public void deleteSales() {
+        saleRepository.deleteAll();
     }
 }
 

@@ -51,15 +51,12 @@ const GdpBarChartRace: React.FC = () => {
 
     const root = am5.Root.new("gdpBarChartRace");
     root.numberFormatter.setAll({
-      numberFormat: "#a",
-      bigNumberPrefixes: [
-        { number: 1e6, suffix: "M" },
-        { number: 1e9, suffix: "B" },
-      ],
+      numberFormat: "##.##",
+      bigNumberPrefixes: [{ number: 1e12, suffix: "T$" }],
       smallNumberPrefixes: [],
     });
 
-    var stepDuration = 500;
+    var stepDuration = 700;
     root.setThemes([am5themes_Animated.new(root)]);
 
     var chart = root.container.children.push(
@@ -99,7 +96,7 @@ const GdpBarChartRace: React.FC = () => {
       })
     );
 
-    xAxis.set("interpolationDuration", stepDuration / 100);
+    xAxis.set("interpolationDuration", stepDuration);
     xAxis.set("interpolationEasing", am5.ease.linear);
 
     var series = chart.series.push(

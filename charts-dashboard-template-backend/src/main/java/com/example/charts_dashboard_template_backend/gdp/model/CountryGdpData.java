@@ -23,7 +23,7 @@ public class CountryGdpData {
     private String country;
 
     @Column(nullable = false)
-    private int gdp;
+    private long gdp;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "gdp_data_id")

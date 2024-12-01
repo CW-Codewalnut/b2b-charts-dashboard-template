@@ -35,7 +35,7 @@
 }
 
 .replay-button:hover {
-  background-color: rgba(0, 0, 0, 0.1); /* Add slight hover effect */
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .chartdiv {

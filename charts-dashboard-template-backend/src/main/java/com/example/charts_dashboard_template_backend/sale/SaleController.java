@@ -21,7 +21,13 @@ public class SaleController {
     @PostMapping
     @CrossOrigin(origins = "*")
     public List<Sale> addSale(@RequestBody List<Sale> sales) {
-        return saleService.saveSale(sales);
+        return saleService.saveSales(sales);
+    }
+
+    @DeleteMapping
+    @CrossOrigin(origins = "*")
+    public void deleteSales() {
+        saleService.deleteSales();
     }
 }
 

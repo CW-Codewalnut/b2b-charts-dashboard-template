@@ -19,4 +19,8 @@ public class GdpService {
     public List<GdpData> saveCountryGdpData(List<GdpData> gdpData) {
         return gdpRepository.saveAll(gdpData);
     }
+
+    public void deleteAllCountryGdpData() {
+        gdpRepository.deleteAll();
+    }
 }
