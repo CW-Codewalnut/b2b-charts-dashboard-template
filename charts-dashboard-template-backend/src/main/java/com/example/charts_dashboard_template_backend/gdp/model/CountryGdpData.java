@@ -11,8 +11,6 @@ import lombok.Setter;
 @Table(name = "country_gdp_data")
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
-@Setter
 public class CountryGdpData {
 
     @Id
@@ -29,4 +27,36 @@ public class CountryGdpData {
     @JoinColumn(name = "gdp_data_id")
     @JsonBackReference
     private GdpData gdpData;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public long getGdp() {
+        return gdp;
+    }
+
+    public void setGdp(long gdp) {
+        this.gdp = gdp;
+    }
+
+    public GdpData getGdpData() {
+        return gdpData;
+    }
+
+    public void setGdpData(GdpData gdpData) {
+        this.gdpData = gdpData;
+    }
 }

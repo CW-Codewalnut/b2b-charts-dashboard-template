@@ -14,8 +14,6 @@ import java.util.List;
 @Table(name = "gdp_data")
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
-@Setter
 public class GdpData implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,4 +25,28 @@ public class GdpData implements Serializable {
     @OneToMany(mappedBy = "gdpData", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JsonManagedReference
     private List<CountryGdpData> countryGdpDataList;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getYear() {
+        return year;
+    }
+
+    public void setYear(String year) {
+        this.year = year;
+    }
+
+    public List<CountryGdpData> getCountryGdpDataList() {
+        return countryGdpDataList;
+    }
+
+    public void setCountryGdpDataList(List<CountryGdpData> countryGdpDataList) {
+        this.countryGdpDataList = countryGdpDataList;
+    }
 }
