@@ -2,6 +2,8 @@
   width: 95vw;
   height: 460px;
   margin: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #f4f4f4;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -23,7 +25,7 @@
 .replay-button {
   position: absolute;
   top: 8px;
-  left: 730px;
+  left: 75vh;
   background-color: transparent;
   color: black;
   border: 2px solid black;

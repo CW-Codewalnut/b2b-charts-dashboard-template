@@ -1,7 +1,7 @@
 .content {
   margin-top: 60px;
   margin-bottom: 40px;
-  padding: 0 20px;
+  padding: 0 10px;
   box-sizing: border-box;
 }
 
@@ -10,4 +10,15 @@
   padding-top: 20px;
   font-size: 40px;
   font-weight: bold;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 34px;
+  padding-bottom: 60px;
+}
+
+.chart-style {
+  padding-bottom: 40px;
 }

@@ -20,9 +20,13 @@ const App: React.FC = () => {
       />
       <div className="content">
         <center className="center">B2B Dashboard Application</center>
-        <GdpBarChartRace />
-        <SalesColumnChart />
-        <div style={{ display: "flex", flexDirection: "row" }}>
+        <div className="chart-style">
+          <GdpBarChartRace />
+        </div>
+        <div className="chart-style">
+          <SalesColumnChart />
+        </div>
+        <div className="flex-row">
           <SalesBarChart />
           <SalesPieChart />
         </div>
