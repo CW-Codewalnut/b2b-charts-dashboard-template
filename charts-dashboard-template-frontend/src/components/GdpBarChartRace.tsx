@@ -51,8 +51,11 @@ const GdpBarChartRace: React.FC = () => {
 
     const root = am5.Root.new("gdpBarChartRace");
     root.numberFormatter.setAll({
-      numberFormat: "##.##",
-      bigNumberPrefixes: [{ number: 1e12, suffix: "T$" }],
+      numberFormat: "#.#a",
+      bigNumberPrefixes: [
+        { number: 1e12, suffix: "T$" },
+        { number: 1e9, suffix: "B$" },
+      ],
       smallNumberPrefixes: [],
     });
 
