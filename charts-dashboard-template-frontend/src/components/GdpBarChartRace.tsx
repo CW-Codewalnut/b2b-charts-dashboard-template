@@ -151,6 +151,18 @@ const GdpBarChartRace: React.FC = () => {
       })
     );
 
+    function adjustLabelSize() {
+      if (window.innerWidth <= 850) {
+        label.set("fontSize", "4em");
+      } else {
+        label.set("fontSize", "8em");
+      }
+    }
+
+    window.addEventListener("resize", adjustLabelSize);
+
+    adjustLabelSize();
+
     function getSeriesItem(category: string | undefined) {
       for (var i = 0; i < series.dataItems.length; i++) {
         var dataItem = series.dataItems[i];
