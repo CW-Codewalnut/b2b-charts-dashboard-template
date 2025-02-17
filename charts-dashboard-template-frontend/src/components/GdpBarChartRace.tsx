@@ -130,8 +130,8 @@ const GdpBarChartRace: React.FC = () => {
         locationX: 1,
         sprite: am5.Label.new(root, {
           text: "{valueXWorking.formatNumber('#.# a')}",
-          fill: root.interfaceColors.get("alternativeText"),
-          centerX: am5.p100,
+          fill: am5.color("#000000"),
+          centerX: am5.p0,
           centerY: am5.p50,
           populateText: true,
         }),
